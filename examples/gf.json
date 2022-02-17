@@ -1,0 +1,24 @@
+[
+  {"declare": "object",
+    "name": "gf",
+    "public": [
+      {"declare": "variable", "type": "bool", "name": "exists", "value": false}
+    ]
+  },
+  {"declare": "function",
+    "name":"check_gf",
+    "return": "void",
+    "parameters": [{"girlfriend": "gf"}],
+    "instructions": [
+      {"print": [{"variable": "girlfriend.exists"}]}
+    ]
+  },
+  {"declare": "function",
+    "name":"main",
+    "return": "int",
+    "instructions": [
+      {"declare": "variable", "type": "gf", "name": "girlfriend"},
+      {"call": "check_gf", "parameters":  [{"variable": "girlfriend"}]}
+    ]
+  }
+]

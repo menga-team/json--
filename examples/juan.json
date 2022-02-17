@@ -1,0 +1,10 @@
+[
+  {"declare": "function",
+    "name": "bingomenga",
+    "return": "void",
+    "parameters": [],
+    "instructions": [
+      {"print": [{"string": "dis was binted from juan\\n"}]}
+    ]
+  }
+]

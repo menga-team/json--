@@ -1,0 +1,5 @@
+#!/bin/bash
+touch $2.cpp
+python /usr/local/bin/jcc_interpreter.py $1 $2.cpp
+g++ $2.cpp -o $2 -w
+rm $2.cpp

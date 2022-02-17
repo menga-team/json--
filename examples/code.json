@@ -1,0 +1,54 @@
+[
+  {"import": "juan.json"},
+  {"declare": "function",
+    "name": "somefunc",
+    "return": "void",
+    "parameters": [
+      {"param1": "string"},
+      {"param2": "int&"},
+      {"yeahboiii": "int"},
+      {"mogus": "string&"}],
+    "instructions": [
+      {"set":  {"type": "int", "name": "param2", "value": 6969}}
+    ]
+  },
+  {"declare": "object",
+    "name": "someobj",
+    "private": [
+      {"declare": "variable", "type": "int", "name": "privateint", "value": 789}
+    ],
+    "public": [
+      {"declare": "function", "name": "youseeingthisshit", "return": "void", "instructions": [{"print": [{"variable": "privateint"},{"string": " yo dis was binted from the someobj object \\n"}]}]}
+    ]
+  },
+  {"declare": "function",
+    "name":"main",
+    "return": "int",
+    "parameters": [],
+    "instructions": [
+      {"declare": "variable", "type": "int", "name": "amogusvar", "value": 123},
+      {"declare": "variable", "type": "string", "name": "yeahboy", "value": "mogus"},
+      {"declare": "variable", "type": "bool", "name": "buhl", "value": true},
+      {"if": "<", "expression":  [{"variable":  "amogusvar"}, {"int":  100}],
+        "instructions": [
+          {"print": [{"string": "oh no, amogus small\\n"}]}
+        ],
+        "else": [
+          {"print": [{"string": "yeees amogus issa very big\\n"}]}
+        ]
+      },
+      {"if": "true", "expression":  [{"variable":  "buhl"}],
+        "instructions": [
+          {"print": [{"string": "itsa trueee\\n"}]}
+        ]
+      },
+
+      {"declare" : "array", "type" : "string", "name" : "stringarraylol", "value": ["amogus", "menga", "bing bong", "yummeh keik", "lol"]},
+      {"call": "somefunc", "parameters": [{"string": "yo"}, {"variable": "amogusvar"}, {"int": 233}, {"variable": "stringarraylol[2]"}]},
+      {"call": "bingomenga", "parameters": []},
+      {"declare":  "variable", "type": "someobj", "name": "gatto"},
+      {"call": "gatto.youseeingthisshit", "parameters": []},
+      {"print": [{"string": "yo "}, {"variable": "amogusvar"}, {"string": " a "}, {"variable": "stringarraylol[2]"}]}
+    ]
+  }
+]
